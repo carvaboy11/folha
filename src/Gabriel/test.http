@@ -1,0 +1,29 @@
+### Cadastrar funcionário
+POST http://localhost:5000/api/funcionario/cadastrar
+Content-Type: application/json
+
+{
+  "nome": "Joao Silva",
+  "cpf": "12345678901",
+  "valorHora": 25.5,
+  "horasTrabalhadas": 160
+}
+
+### Listar funcionários
+GET http://localhost:5000/api/funcionario/listar
+
+### Cadastrar folha de pagamento
+POST http://localhost:5000/api/folha/cadastrar
+Content-Type: application/json
+
+{
+  "cpf": "12345678901",
+  "mes": 9,
+  "ano": 2025
+}
+
+### Listar folhas
+GET http://localhost:5000/api/folha/listar
+
+### Buscar folha por cpf, mes, ano
+GET http://localhost:5000/api/folha/buscar/12345678901/9/2025
